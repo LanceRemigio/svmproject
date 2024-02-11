@@ -7,6 +7,10 @@ from sklearn.metrics import classification_report, confusion_matrix
 
 iris = sns.load_dataset('iris')
 
+print(
+        iris.info()
+        )
+
 # Train Test Split
 
 X = iris.drop('species', axis = 1)
